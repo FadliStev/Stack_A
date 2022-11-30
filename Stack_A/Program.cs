@@ -32,6 +32,15 @@ namespace Stack_A
             else
                 return (false);
         }
+        public void Push(int element)
+        {
+            Node fresh;
+            fresh = new Node(element, null);
+
+            fresh.next = top;
+            top = fresh;
+            Console.WriteLine("\n "+ element +"pushed.");
+        }
     }
     internal class Program
     {
