@@ -16,6 +16,23 @@ namespace Stack_A
             next = n;
         }
     }
+    class Stacks
+    {
+        Node top;
+        
+        public Stacks()
+        {
+            top = null;
+        }
+
+        bool Empty()
+        {
+            if (top == null)
+                return (true);
+            else
+                return (false);
+        }
+    }
     internal class Program
     {
         static void Main(string[] args)
