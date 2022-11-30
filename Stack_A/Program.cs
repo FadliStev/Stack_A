@@ -46,6 +46,21 @@ namespace Stack_A
             Console.WriteLine("\n The poped elment is:" + top.info);
             top = top.next;//Make top point to the next node in sequence
         }
+        public void display()
+        {
+            Node tmp;
+            if (Empty()) //If stack is empty
+                Console.WriteLine("\nStacks is Empty");
+            else
+            {
+                //Traverse the list from beginning till end
+                for (tmp = top; tmp != null; tmp = tmp.next)
+                {
+                    Console.WriteLine("tmp.info");
+                }
+                Console.WriteLine();
+            }
+        }
     }
     internal class Program
     {
