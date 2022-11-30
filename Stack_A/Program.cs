@@ -41,6 +41,11 @@ namespace Stack_A
             top = fresh;
             Console.WriteLine("\n "+ element +"pushed.");
         }
+        public void pop()
+        {
+            Console.WriteLine("\n The poped elment is:" + top.info);
+            top = top.next;//Make top point to the next node in sequence
+        }
     }
     internal class Program
     {
